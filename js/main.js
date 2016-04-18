@@ -1,3 +1,7 @@
+$(document).ready(function(){
+	$("input#text").focus();
+})
+
 $("button#search").on("click", function(){
 	$("div#container").empty();
 	var inputVal = $("input#text").val();
@@ -12,7 +16,7 @@ $("button#search").on("click", function(){
 			$("div#container").append("<a target='_blank' href='" + itemLink[i] + "'><div class='item'><span class='itemName'>" + itemName[i] + "</span>" + " " + itemDescription[i] + "</div></a>");
 		}
 		})//EOF getJSON
-	$("input#text").val("");
+	$("input#text").val("").focus();
 });//EOF button click
 		
 	
