@@ -13,7 +13,7 @@ $("button#search").on("click", function(){
 		var itemLink = $.each(json[3], function(i, val){
 		})
 		for (var i=0; i <itemName.length; i++) {
-			$("div#container").append("<a target='_blank' href='" + itemLink[i] + "'><div class='item'><span class='itemName'>" + itemName[i] + "</span>" + " " + itemDescription[i] + "</div></a>");
+			$("div#container").append("<a target='_blank' href='" + itemLink[i] + "'><div class='item'><p><span class='itemName'>" + itemName[i] + "</span></p><p>" + " " + itemDescription[i] + "</p></div></a>");
 		}
 		})//EOF getJSON
 	$("input#text").val("").focus();
