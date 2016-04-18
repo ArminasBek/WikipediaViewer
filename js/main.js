@@ -1,7 +1,8 @@
 $(document).ready(function(){
+	//focus on input on page load.
 	$("input#text").focus();
 })
-
+//get three different arrays from API, cycle through them and append it on button click.
 $("button#search").on("click", function(){
 	$("div#container").empty();
 	var inputVal = $("input#text").val();
@@ -16,8 +17,9 @@ $("button#search").on("click", function(){
 			$("div#container").append("<a target='_blank' href='" + itemLink[i] + "'><div class='item'><p><span class='itemName'>" + itemName[i] + "</span></p><p>" + " " + itemDescription[i] + "</p></div></a>");
 		}
 		})//EOF getJSON
+	//empty input field and keep focus.
 	$("input#text").val("").focus();
-});//EOF button click
+});//EOF button click.
 		
 	
 
