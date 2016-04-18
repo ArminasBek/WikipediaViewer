@@ -12,6 +12,7 @@ $("button#search").on("click", function(){
 			$("div#container").append("<a target='_blank' href='" + itemLink[i] + "'><div class='item'><span class='itemName'>" + itemName[i] + "</span>" + " " + itemDescription[i] + "</div></a>");
 		}
 		})//EOF getJSON
+	$("input#text").val("");
 });//EOF button click
 		
 	
