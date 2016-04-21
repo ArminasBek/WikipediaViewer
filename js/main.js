@@ -2,6 +2,7 @@ $(document).ready(function(){
 	//focus on input on page load.
 	$("input#text").focus();
 })
+
 //get three different arrays from API, cycle through them and append it on button click.
 $("button#search").on("click", function(){
 	$("div#container").empty();
@@ -20,7 +21,15 @@ $("button#search").on("click", function(){
 	//empty input field and keep focus.
 	$("input#text").val("").focus();
 });//EOF button click.
-		
+
+$("button#random").on("click", function() {
+	var random = window.open("https://en.wikipedia.org/wiki/Special:Random", "blank");
+	if(random){
+		random.focus()
+	}else {
+		alert("Please allow popups for this site");
+	}
+})		
 	
 
 
