@@ -1,16 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
 body {
+	background: url(https://dl.dropboxusercontent.com/u/54983478/dark_embroidery.png) top left repeat;
+	font-family: Droid Sans, serif;
 	text-align: center;
+	background-color: #9099A2;
 }
 
-.itemName {
-	color: tomato;
+h1 {
+	font-size: 4em;
+	color: #fff;
+	margin-bottom: 0;
 }
 
 .button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
+	background: #FEDA71;
+	background: -moz-linear-gradient(top,#FEDA71 0%,#FEBB49 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#FEDA71),color-stop(100%,#FEBB49));
+	background: -webkit-linear-gradient(top,#FEDA71 0%,#FEBB49 100%);
+	background: -o-linear-gradient(top,#FEDA71 0%,#FEBB49 100%);
+	background: -ms-linear-gradient(top,#FEDA71 0%,#FEBB49 100%);
+	background: linear-gradient(top,#FEDA71 0%,#FEBB49 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#FEDA71',endColorstr='#FEBB49',GradientType=0);
+	padding:8px 18px;
+	color:#623F1D;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:16px;
+	border-radius:48px;
+	-moz-border-radius:48px;
+	-webkit-border-radius:48px;
+	border:1px solid #623F1D
+}
 
-    text-decoration: none;
-    color: initial;
+input {
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+input:focus {
+	outline: none;
+}
+
+.item {
+	background-color: #fff;
+	width: 50%;
+	margin: 0 auto;
+	color: #000;
+	font-size: 1.2em;
+	border-radius: 10px;
+}
+a {
+ 	text-decoration: none;
+ }
+
+.itemName {
+	color: tomato;
+	font-weight: 700;
+}
+
+.linktome {
+	color: #D5D5D5;
 }
